@@ -1,7 +1,7 @@
-#import "Migrations.h"
-#import "FMDatabaseQueue.h"
 #import "FMDatabase.h"
-#import "NSString+MD5.h"
+#import "FMDatabaseQueue.h"
+#import "FMMigrations.h"
+#import <CommonCrypto/CommonDigest.h>
 
 NSString * MD5String(NSString *str) {
     const char *cstr = [str UTF8String];
